@@ -8,7 +8,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import App from './App'
 import router from './router'
-
+import '@/assets/styles/index.scss'
+import 'font-awesome/css/font-awesome.css'
+import store from '@/store/index'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
@@ -17,6 +19,7 @@ Vue.use(ElementUI);
 new Vue({
     el: '#app',
     router,
+    store,
     components: { App },
     template: '<App/>',
     render: h => h(App)
